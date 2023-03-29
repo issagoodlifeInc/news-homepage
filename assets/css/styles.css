@@ -22,6 +22,70 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 15px;
+  background-color: var(--offwhite);
+  line-height: 1.5;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  transition: color 200ms ease-in;
+  text-decoration: none;
+}
+
+p,
+a {
+  color: var(--darkgrayishblue);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+nav,
+main {
+  width: min(1200px, 100vw - 2rem);
+  margin-inline: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1rem;
+}
+
+.nav--list {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav--list li a:hover {
+  color: var(--softred);
+}
+
+@media screen and (width < 600px) {
+  .nav--list {
+    display: none;
+  }
+}
+
+@media screen and (width > 600px) {
+  .menu {
+    display: none;
+  }
+  .nav--list {
+    display: flex;
+  }
 }
 
 .attribution {

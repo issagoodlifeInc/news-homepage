@@ -64,6 +64,20 @@ nav {
   padding-block: 1rem;
 }
 
+.hamburger {
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/icon-menu.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hamburger.open {
+  background-image: url("../images/icon-menu-close.svg");
+}
+
 .nav--list {
   display: flex;
   gap: 2rem;
@@ -73,19 +87,55 @@ nav {
   color: var(--softred);
 }
 
+.overflow {
+  position: absolute;
+}
+
 @media screen and (width < 600px) {
   .nav--list {
     display: none;
   }
+  .nav--list.addnav {
+    position: absolute;
+    background-color: var(--offwhite);
+    width: 70vw;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 200ms ease-out;
+  }
 }
 
 @media screen and (width > 600px) {
-  .menu {
+  .hamburger {
     display: none;
   }
   .nav--list {
     display: flex;
   }
+}
+
+.hero--title {
+  font-size: clamp(1.5rem, 5vw, 3.5rem);
+  line-height: 1;
+  width: 70%;
+}
+
+.btn--read {
+  background-color: var(--softred);
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  color: var(--offwhite);
+}
+
+.btn--read:hover {
+  transform: scale(2);
+}
+
+@media screen and (width > 800px) {
 }
 
 .attribution {

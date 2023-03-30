@@ -30,6 +30,10 @@ li {
   list-style: none;
 }
 
+button {
+  border: none;
+}
+
 a {
   transition: color 200ms ease-in;
   text-decoration: none;
@@ -122,6 +126,8 @@ nav {
   font-size: clamp(1.5rem, 5vw, 3.5rem);
   line-height: 1;
   width: 70%;
+  padding-block: 0.5rem;
+  font-weight: 800;
 }
 
 .btn--read {
@@ -132,10 +138,58 @@ nav {
 }
 
 .btn--read:hover {
-  transform: scale(2);
+  background-color: var(--verydarkblue);
+  transform: scale(1.1);
+}
+
+.hero--text p {
+  padding-block: 1rem;
+}
+
+.news {
+  margin-block: 1rem;
+  background-color: var(--verydarkblue);
+  padding: 1rem;
+  color: #fff;
+}
+
+.news--title {
+  color: var(--softorange);
+}
+
+.news--content {
+  padding-block: 1rem;
+}
+
+.news--text {
+  color: var(--grayishblue);
+}
+
+.news :nth-child(3) {
+  border-top: 1px solid var(--darkgrayishblue);
+  border-bottom: 1px solid var(--darkgrayishblue);
+}
+
+.news--heading {
+  font-size: 1rem;
 }
 
 @media screen and (width > 800px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .hero--content {
+    display: flex;
+  }
+  .hero--title,
+  .hero--text {
+    flex: 1;
+  }
+  .news {
+    margin-block: 0;
+  }
 }
 
 .attribution {

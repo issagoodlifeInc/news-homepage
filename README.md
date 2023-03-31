@@ -27,8 +27,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+- Laptop screenshot :- 
+![](./assets/images/screenshotlap.jpg)
 
+- Mobile mockup screeenshot :-
+![](./assets/images/screenshotmob.jpg)
 
 ### Links
 

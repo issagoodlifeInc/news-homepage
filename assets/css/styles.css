@@ -168,8 +168,7 @@ nav {
 }
 
 .news :nth-child(3) {
-  border-top: 1px solid var(--darkgrayishblue);
-  border-bottom: 1px solid var(--darkgrayishblue);
+  border-block: 1px solid var(--darkgrayishblue);
 }
 
 .news--heading {

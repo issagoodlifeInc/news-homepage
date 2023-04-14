@@ -40,6 +40,10 @@ Users should be able to:
 
 ## My process
 
+1. Started with writing up all the html having decided on how to best handle the layout given
+   
+2. Styled the page from top to bottom switching between mobile and largew screen sizes as I styled the page.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -51,31 +55,23 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Some code I'm proud of :- 
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- Adding the tob and bottom border for the second news item only
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.news :nth-child(3) {
+  border-block: 1px solid var(--darkgrayishblue);
 }
 ```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+Better turnaround time
+Better and cleaner html markup set up
+Navigation handling
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@leskim](https://www.frontendmentor.io/profile/leskim)
 
 
